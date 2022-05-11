@@ -1,10 +1,10 @@
 import React from "react";
-import image from "../../public/image/people_cuadrado.png";
+import image from "../../assets/image/people_cuadrado.png";
 import SelectCar from "./SelectCar";
 
 const HeaderPerfil = () => {
   return (
-    <header className="w-full sm:w-2/5 mx-auto grid grid-cols-2 gap-4 rounded-lg shadow-md px-4 py-2 mt-2">
+    <header className="w-full sm:w-3/4 max-w-xl mx-auto grid grid-cols-2 gap-4 rounded-lg shadow-md px-4 py-2 mt-2">
       <section className="grid grid-cols-3">
         <img
           src={image}
@@ -18,7 +18,7 @@ const HeaderPerfil = () => {
         </div>
       </section>
       <section className="">
-       <SelectCar />
+        <SelectCar />
         <p className="text-xs text-center">
           Última mantención: <span>22/05/2022</span>
         </p>
