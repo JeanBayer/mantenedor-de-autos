@@ -1,0 +1,21 @@
+{
+  "userId": 1,
+  "autos": [
+    {
+      "id": 1,
+      "modelo": "spark gt lt 1.2"
+    },
+    {
+      "id": 2,
+      "modelo": "Fiat"
+    },
+    {
+      "id": 3,
+      "modelo": "Ferrari"
+    },
+    {
+      "id": 4,
+      "modelo": "mitsubishi"
+    }
+  ]
+}
