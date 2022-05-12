@@ -3,19 +3,75 @@
   "autos": [
     {
       "id": 1,
-      "modelo": "spark gt lt 1.2"
+      "modelo": "spark gt lt 1.2",
+      "informacion": [
+        {
+          "descripcion": "Motor",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "Cilindros",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "Cilindrada",
+          "detalle": "1.2"
+        }
+      ]
     },
     {
       "id": 2,
-      "modelo": "Fiat"
+      "modelo": "Fiat",
+      "informacion": [
+        {
+          "descripcion": "Motor",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "Cilindros",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "Cilindrada",
+          "detalle": "1.2"
+        }
+      ]
     },
     {
       "id": 3,
-      "modelo": "Ferrari"
+      "modelo": "Ferrari",
+      "informacion": [
+        {
+          "descripcion": "Motor",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "Cilindros",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "Cilindrada",
+          "detalle": "1.2"
+        }
+      ]
     },
     {
       "id": 4,
-      "modelo": "mitsubishi"
+      "modelo": "mitsubishi",
+      "informacion": [
+        {
+          "descripcion": "Motor",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "Cilindros",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "Cilindrada",
+          "detalle": "1.2"
+        }
+      ]
     }
   ]
 }
