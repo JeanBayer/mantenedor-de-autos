@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Modal = ({ campos }) => {
+const Modal = ({ campos, updateCampos }) => {
   const [descripcion, setDescripcion] = useState("");
   const [detalle, setDetalle] = useState("");
 
@@ -29,6 +29,14 @@ const Modal = ({ campos }) => {
           onChange={(e) => setDetalle(e.target.value)}
         />
       </section>
+      <button
+        onClick={() => {
+          updateCampos({ ...campos, descripcion, detalle });
+        }}
+      >
+        Aceptar
+      </button>
+      <button>Cancelar</button>
     </div>
   );
 };
