@@ -10,8 +10,6 @@ const HeaderPerfil = ({
   filteredCar,
 }) => {
   const { nombre, rut, email, celular } = usuario;
-  console.log({filteredCar});
-  console.log(Object.keys(filteredCar).length);
   return (
     <header className="w-full sm:w-3/4 max-w-xl mx-auto grid grid-cols-2 gap-4 rounded-lg shadow-md px-4 py-2 mt-2">
       <section className="grid grid-cols-3">
@@ -34,7 +32,7 @@ const HeaderPerfil = ({
         />
         <p className="text-xs text-center">
           Última mantención:{" "}
-          <span>{Object.keys(filteredCar).length > 0 && filteredCar[0].ultima_revision}</span>
+          <span>{filteredCar && filteredCar.ultima_revision}</span>
         </p>
       </section>
     </header>
