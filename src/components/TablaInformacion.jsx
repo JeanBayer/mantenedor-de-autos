@@ -1,7 +1,6 @@
-import { useState } from "react";
 import iconAñadir from "../../assets/image/icons8-añadir-50.png";
 
-const TablaInformacion = () => {
+const TablaInformacion = ({ filteredCar }) => {
   return (
     <div className="w-full sm:w-3/4 max-w-4xl mx-auto rounded-lg shadow-md px-6 py-6 mt-2 max-h-[32rem]">
       <h3 className="font-bold text-center py-2 text-lg">
@@ -15,20 +14,17 @@ const TablaInformacion = () => {
           </tr>
         </thead>
         <tbody>
-          <tr
-            className="hover:cursor-pointer hover:bg-slate-300 transition-colors duration-500 border-t text-sm sm:text-lg"
-            onClick={() => console.log("click")}
-          >
-            <td>Focos en iluminacion trasera</td>
-            <td>3 focos de 50 W cada uno</td>
-          </tr>
-          <tr
-            className="hover:cursor-pointer hover:bg-slate-300 transition-colors duration-500 border-t text-sm sm:text-lg"
-            onClick={() => console.log("click")}
-          >
-            <td>Focos en iluminacion trasera</td>
-            <td>3 focos de 50 W cada uno</td>
-          </tr>
+          {Object.keys(filteredCar).length > 0 &&
+            filteredCar[0].informacion.map((info, index) => (
+              <tr
+                key={index}
+                className="hover:cursor-pointer hover:bg-slate-300 transition-colors duration-500 border-t text-sm sm:text-lg"
+                onClick={() => console.log("click")}
+              >
+                <td className="text-center">{info.descripcion}</td>
+                <td className="text-center">{info.detalle}</td>
+              </tr>
+            ))}
         </tbody>
       </table>
       <section className="flex justify-end">

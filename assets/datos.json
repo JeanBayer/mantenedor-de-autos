@@ -24,15 +24,15 @@
       "modelo": "Fiat",
       "informacion": [
         {
-          "descripcion": "Motor",
+          "descripcion": "fis",
           "detalle": "1.2"
         },
         {
-          "descripcion": "Cilindros",
+          "descripcion": "fiar",
           "detalle": "4"
         },
         {
-          "descripcion": "Cilindrada",
+          "descripcion": "fiat",
           "detalle": "1.2"
         }
       ]
@@ -42,6 +42,36 @@
       "modelo": "Ferrari",
       "informacion": [
         {
+          "descripcion": "fer",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "ferrari",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "fe",
+          "detalle": "1.2"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "modelo": "mitsubishi",
+      "informacion": [
+        {
+          "descripcion": "Mitsubishi",
+          "detalle": "1.2"
+        },
+        {
+          "descripcion": "mit",
+          "detalle": "4"
+        },
+        {
+          "descripcion": "misa",
+          "detalle": "1.2"
+        },
+        {
           "descripcion": "Motor",
           "detalle": "1.2"
         },
@@ -52,13 +82,7 @@
         {
           "descripcion": "Cilindrada",
           "detalle": "1.2"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "modelo": "mitsubishi",
-      "informacion": [
+        },
         {
           "descripcion": "Motor",
           "detalle": "1.2"
