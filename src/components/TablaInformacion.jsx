@@ -2,7 +2,7 @@ import iconAñadir from "../../assets/image/icons8-añadir-50.png";
 
 const TablaInformacion = ({ filteredCar, setModal, setCampos }) => {
   return (
-    <div className="w-full sm:w-3/4 max-w-4xl mx-auto rounded-lg shadow-md px-6 py-6 mt-2 max-h-[32rem]">
+    <>
       <h3 className="font-bold text-center py-2 text-lg">
         Infomacion del auto
       </h3>
@@ -30,12 +30,10 @@ const TablaInformacion = ({ filteredCar, setModal, setCampos }) => {
             ))}
         </tbody>
       </table>
-      <section className="flex justify-end">
-        <a className="hover:cursor-pointer">
-          <img src={iconAñadir} />
-        </a>
+      <section className="absolute bottom-4 right-4">
+        <img className="hover:cursor-pointer" src={iconAñadir} />
       </section>
-    </div>
+    </>
   );
 };
 

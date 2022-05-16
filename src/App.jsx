@@ -92,12 +92,14 @@ function App() {
         setSelectedCar={setSelectedCar}
         filteredCar={filteredCar}
       />
-      <TablaInformacion
-        filteredCar={filteredCar}
-        setModal={setModal}
-        setCampos={setCampos}
-      />
-      {modal && <Modal campos={campos} updateCampos={updateCampos} />}
+      <section className="relative w-full sm:w-3/4 max-w-4xl mx-auto rounded-lg shadow-md px-6 py-6 mt-2 min-h-[20rem] max-h-[36rem]">
+        <TablaInformacion
+          filteredCar={filteredCar}
+          setModal={setModal}
+          setCampos={setCampos}
+        />
+        {modal && <Modal campos={campos} updateCampos={updateCampos} />}
+      </section>
     </>
   );
 }
