@@ -1,6 +1,7 @@
 import React from "react";
 import image from "../../assets/image/people_cuadrado.png";
 import SelectCar from "./SelectCar";
+import styles from "../styles/HeaderPerfil.module.css";
 
 const HeaderPerfil = ({
   usuario,
@@ -11,20 +12,17 @@ const HeaderPerfil = ({
 }) => {
   const { nombre, rut, email, celular } = usuario;
   return (
-    <header className="w-full sm:w-3/4 max-w-xl mx-auto grid grid-cols-2 gap-4 rounded-lg shadow-md px-4 py-2 mt-2">
-      <section className="grid grid-cols-3">
-        <img
-          src={image}
-          className="rounded-full w-10 justify-self-center self-center"
-        />
-        <div className="col-span-2">
-          <h2 className="font-bold">{nombre}</h2>
-          <p className="text-xs">{rut}</p>
-          <p className="text-xs">{celular}</p>
-          <p className="text-xs">{email}</p>
+    <header className={`${styles.header} shadow`}>
+      <section className={styles.informacion}>
+        <img src={image} className={`${styles.avatar} shadow`} />
+        <div className={styles.datos_usuario}>
+          <h2>{nombre}</h2>
+          <p>{rut}</p>
+          <p>{celular}</p>
+          <p>{email}</p>
         </div>
       </section>
-      <section>
+      <section className={styles.select_carro}>
         <SelectCar
           cars={cars}
           selectedCar={selectedCar}

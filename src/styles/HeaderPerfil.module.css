@@ -1,0 +1,78 @@
+.header {
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content;
+    gap: 1rem;
+}
+
+@media (min-width: 640px) {
+    .header {
+        margin-top: 10px;
+        max-width: 650px;
+        width: 75%;
+        min-height: 120px;
+        grid-template-columns: 5fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+.informacion {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4rem 1fr;
+    grid-gap: 0.5rem;
+    align-self: center;
+}
+
+@media (min-width: 640px) {
+    .informacion {
+        grid-column: 1 / span 2;
+        display: grid;
+        grid-template-columns: 4rem 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 0.5rem;
+    }
+}
+
+.avatar {
+    width: 100%;
+    max-width: 4rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.datos_usuario h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.datos_usuario p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .select_carro {
+        grid-column: 3 / 5;
+        grid-gap: 0.5rem;
+        align-self: center;
+    }
+}
+
+.select_carro p {
+    padding: 10px 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.select_carro span {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
